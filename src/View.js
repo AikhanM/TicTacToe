@@ -27,6 +27,10 @@ export default class View {
         callback(cell.dataset.value)
       })
     })
+
+    this.newGameBtn.addEventListener("click", () => this.startNewGame());
+    this.resetBtn.addEventListener("click", () => this.resetClickHandler());
+
   }
 
   addToBoard(board) {
@@ -53,6 +57,7 @@ export default class View {
     }
   }
 
+
   
   updateCell(){
     this.cells.forEach((cell) => {
@@ -60,6 +65,7 @@ export default class View {
         cell.classList.remove("cross", "circle");
       });
 }
+
 
   hideModal() {
     this.modal.classList.add("hidden");

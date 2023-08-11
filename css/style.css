@@ -76,8 +76,13 @@ body{
     justify-content: space-between;
     margin-top: 10px;
     position: relative;
+
     top:-46%;
     left:26%;
+
+    top:-40%;
+    left:20%;
+
     
   }
 

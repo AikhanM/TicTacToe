@@ -48,6 +48,7 @@ export default class Model {
         } else if (this.winner === "O") {
             this.playerOScore++;
         }
+
         else{
             this.playerOScore=0
             this.playerXScore=0
@@ -55,10 +56,15 @@ export default class Model {
     }
 
 
+    
+
+
     resetGame() {
         this.gameBoard = ["", "", "", "", "", "", "", "", ""];
         this.curPlayer = "X";
         this.winner = null;
+
         
+
     }
 }
