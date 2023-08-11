@@ -18,20 +18,10 @@ export default class Controller {
     })
 
 
-    this.view.cells.forEach((cell) => {
-      cell.addEventListener("click", () => {
-        this.play(cell.dataset.value);
-      });
-    });
+  
 
-    this.view.newGameBtn.addEventListener("click", () => this.startNewGame());
-    this.view.resetBtn.addEventListener("click", () =>
-      this.resetClickHandler()
-    );
 
-    this.view.cells.forEach((cell, i) => {
-      cell.addEventListener("click", () => this.addMove(i));
-    });
+    
 
   }
 
@@ -67,12 +57,7 @@ export default class Controller {
 
       } 
 
-      } else {
-        const clone = document.createElement("div");
-        clone.classList.add(this.model.curPlayer);
-        cell.appendChild(clone);
-      }
-
+      } 
     }
   
 
@@ -80,12 +65,6 @@ export default class Controller {
     this.model.resetGame();
 
     this.view.updateCell()
-
-    this.view.cells.forEach((cell) => {
-      cell.textContent = "";
-      cell.classList.remove("cross", "circle");
-    });
-
     this.view.hideModal();
   }
 

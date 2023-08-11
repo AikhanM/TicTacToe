@@ -6,11 +6,6 @@ export default class View {
     this.modal = document.querySelector(".modal");
     this.overlay = document.querySelector(".overlay");
     this.message = document.querySelector(".message");
-
-   
-    
-
-  
   }
 
   listenStartNewGame(callback){
@@ -28,8 +23,7 @@ export default class View {
       })
     })
 
-    this.newGameBtn.addEventListener("click", () => this.startNewGame());
-    this.resetBtn.addEventListener("click", () => this.resetClickHandler());
+
 
   }
 

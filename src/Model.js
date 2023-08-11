@@ -63,8 +63,5 @@ export default class Model {
         this.gameBoard = ["", "", "", "", "", "", "", "", ""];
         this.curPlayer = "X";
         this.winner = null;
-
-        
-
     }
 }
