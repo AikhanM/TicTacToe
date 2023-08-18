@@ -10,6 +10,3 @@ window.addEventListener("DOMContentLoaded",function(){
 })
 
 window.addEventListener("DOMContentLoaded",initialize)
-
-
-
