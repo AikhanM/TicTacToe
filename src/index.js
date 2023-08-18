@@ -1,6 +1,7 @@
 import Model from "./Model.js";
 import View from "./View.js";
 import Controller from "./Controller.js";
+import "../css/style.scss"
 
 window.addEventListener("DOMContentLoaded",function(){
     const model=new Model()
@@ -8,5 +9,4 @@ window.addEventListener("DOMContentLoaded",function(){
     const controller=new Controller(model,view)
     controller.init()
 })
-
 window.addEventListener("DOMContentLoaded",initialize)
