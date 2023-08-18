@@ -28,8 +28,14 @@ module.exports = {
         use: "babel-loader",
       },
       {
-        test: /\.css$/,
-        use: ['style-loader', 'css-loader'],
+        // Test for Sass/SCSS files
+        test: /\.(css|s[ac]ss)$/i,
+        // Use MiniCssExtractPlugin loader to extract CSS into separate files
+        use: [
+          MiniCssExtractPlugin.loader,
+          "css-loader", // Load CSS
+          "sass-loader", // Convert Sass to CSS
+        ],
       },
       {
         // Test for image files
