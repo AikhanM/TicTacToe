@@ -1,13 +1,13 @@
 export default class Controller {
-  constructor(Model, View) {
-    this.model = Model;
-    this.view = View;
+  constructor(model, view) {
+    this.model = model;
+    this.view = view;
+  }
 
+  init(){
     this.view.listenerSetData((cellValue)=>{
       this.play(cellValue)
     })
-
-
 
     this.view.listenResetClickHandler(()=>{
       this.resetClickHandler()
@@ -16,13 +16,6 @@ export default class Controller {
     this.view.listenStartNewGame(()=>{
       this.startNewGame()
     })
-
-
-  
-
-
-    
-
   }
 
   play(i) {
@@ -36,7 +29,6 @@ export default class Controller {
       this.view.showModal("Draw");
     }
   }
-
 
   addMove(i) {
     if (
@@ -54,16 +46,12 @@ export default class Controller {
         );
       } else if (this.model.isBoardFull()) {
         this.showModal("Draw");
-
       } 
-
       } 
     }
-  
 
   startNewGame() {
     this.model.resetGame();
-
     this.view.updateCell()
     this.view.hideModal();
   }
@@ -72,6 +60,5 @@ export default class Controller {
     this.startNewGame();
     this.view.manageScore(0, 0);
     this.model.updateScore()
-
   }
 }

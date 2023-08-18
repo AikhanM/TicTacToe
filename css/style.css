@@ -13,7 +13,6 @@ body{
     display: flex;
     flex-wrap: wrap;
     width: 610px;
-    
 }
 .cell{
     width:200px;
@@ -76,14 +75,8 @@ body{
     justify-content: space-between;
     margin-top: 10px;
     position: relative;
-
     top:-46%;
     left:26%;
-
-    top:-40%;
-    left:20%;
-
-    
   }
 
   .score-box {
@@ -124,7 +117,6 @@ body{
   }
   .modal .cont {
     position: relative;
-    
   }
   .modal h4 {
     

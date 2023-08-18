@@ -55,10 +55,6 @@ export default class Model {
         }
     }
 
-
-    
-
-
     resetGame() {
         this.gameBoard = ["", "", "", "", "", "", "", "", ""];
         this.curPlayer = "X";

@@ -23,8 +23,6 @@ export default class View {
       })
     })
 
-
-
   }
 
   addToBoard(board) {
@@ -51,15 +49,12 @@ export default class View {
     }
   }
 
-
-  
   updateCell(){
     this.cells.forEach((cell) => {
         cell.textContent = "";
         cell.classList.remove("cross", "circle");
       });
 }
-
 
   hideModal() {
     this.modal.classList.add("hidden");
