@@ -8,7 +8,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 // Export the webpack configuration object
 module.exports = {
   // Entry point of the application
-  entry: "./src/index.js",
+  entry: "./src/js/index.js",
   // Output configuration for bundled files
   output: {
     // Resolve the output path to an absolute directory
@@ -48,7 +48,7 @@ module.exports = {
   plugins: [
     // Generate an HTML file with the bundled JavaScript
     new HtmlWebpackPlugin({
-      template: "./index.html",
+      template: "./src/index.html",
     }),
     // Extract CSS into a separate file
     new MiniCssExtractPlugin({
